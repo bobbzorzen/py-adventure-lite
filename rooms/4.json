@@ -1,0 +1,17 @@
+{
+    "name" : "The not so infamous 'Forest'",
+    "description" : "In the forest you meet the world renowned 'Hrun the Barbarian' who offers you a pair of seemingly useless boots that he found on his last temple raid.",
+    "clue" : "Since you brought me along you can borrow my chest of (fully-)sentient pearwood to store an infinite amount of items for you so why not?",
+    "neighbors" : {"w" : 1},
+    "items" : [{
+            "name" : "Boots of ankle kicking",
+            "description" : "Boots specifically designed to kick the ankles of things that has no ankles(What could that possibly be used for...)",
+            "indestructable" : "True",
+            "heavy" : "False"
+        }
+    ],
+    "requiredItems" : [
+        "Twoflower"
+    ],
+    "deniedText" : "You can't possibly leave Twoflower alone... A To-u-reist like him would be gutter meat within a couple of minutes."
+}

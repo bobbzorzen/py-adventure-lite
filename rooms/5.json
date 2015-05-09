@@ -1,0 +1,13 @@
+{
+    "name" : "The circumfence",
+    "description" : "This is the end of the world, both literally and figuratively... Surrounding the circumference of the world is a large (circum-)fence. Alot of junk gets caught here, like hats and such.",
+    "clue" : "A person who wears a wizards hat looks alot like a wizard, don't you agree?",
+    "neighbors" : {"e" : 3},
+    "items" : [{
+            "name" : "Wizards hat",
+            "description" : "A large pointy hat that wizards use. It smells like fish(but wizards have a poor sence of smell anyways).",
+            "indestructable" : "True",
+            "heavy" : "False"
+        }
+    ]
+}

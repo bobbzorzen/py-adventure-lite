@@ -1,0 +1,23 @@
+{
+    "name" : "Ankh-Morpork",
+    "description" : "You're standing in the middle of the small town of Ankh-Morpork. To the north lies the Library of Unseen University. To the west lies the infamous 'Swamp'. To the east lies the not so infamous 'Forest'. To the south lies the temple of Bel-Shamharoth(*Only for high level wizards)",
+    "clue" : "I can help you on your travels. Everything else in the town seems to be here for beginners to test any of their destructive spells(like kick)",
+    "neighbors" : {"n" : 2, "w" : 3, "e": 4, "s" : 8},
+    "items" : [{
+            "name" : "Twoflower",
+            "description" : "The first ever To-u-reist to visit this part of the discworld. He comes from the Agatean Empire and is annoyinly optimistic.",
+            "indestructable" : "True",
+            "heavy" : "False"
+        }, {
+            "name" : "Horny Helmet",
+            "description" : "A classic old viking helmet with large horns on it(what did you think the \"horny\" was for? pervert)",
+            "indestructable" : "True",
+            "heavy" : "True"
+        }, {
+            "name" : "Old plank",
+            "description" : "A crappy good for nothin' half broken old plank of (semi-)sentient pearwood",
+            "indestructable" : "False",
+            "heavy" : "True"
+        }
+    ]
+}

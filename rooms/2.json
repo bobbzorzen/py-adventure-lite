@@ -1,0 +1,17 @@
+{
+    "name" : "The Library of Unseen University",
+    "description" : "You're standing in the vast Library of Unseen University. On the wall there is the librarys official motto. On the other wall you see the librarys inofficial motto. In the middle of the room there is a pedistal with an ancient book that shines with octarine light",
+    "clue" : "That book looks suspiciously useful",
+    "neighbors" : {"s" : 1},
+    "items" : [{
+            "name" : "Octavo",
+            "description" : "The mightiest grimoire in existance(and non existance)",
+            "indestructable" : "True",
+            "heavy" : "False"
+        }
+    ],
+    "requiredItems" : [
+        "Wizards hat"
+    ],
+    "deniedText" : "You are stopped at the door by a levitating talking shoe, it tells you: \nHey! only wizards are allowed in here and you don't look like a wizard in the slightest. Wizards have large pointy hats!\nYou shamefully cover your naked head with your hands and turn back"
+}

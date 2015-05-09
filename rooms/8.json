@@ -1,0 +1,18 @@
+{
+    "name" : "Temple of Bel-Shamharoth",
+    "description" : "The octagonalest of rooms that was ever built. The home of 'Bel-Shamharoth' aka 'The soul eater'",
+    "clue" : "It is rumoured that the only weakness of the mighty Bel-Shamharoth is a solid kick to it's left ankle(if only it had ankles).",
+    "neighbors" : {"n" : 1},
+    "items" : [{
+            "name" : "Bel-Shamharoth",
+            "description" : "Bel-Shamharoth is an infinitely armed octipus like creature that is rumoured to be older than A'Tuin himself.",
+            "indestructable" : "False",
+            "heavy" : "True"
+        }
+    ],
+    "requiredItems" : [
+        "Octavo",
+        "Boots of ankle kicking"
+    ],
+    "deniedText" : "Only high level wizards can enter this temple. And only those who have boots may walk these octarine steps"
+}

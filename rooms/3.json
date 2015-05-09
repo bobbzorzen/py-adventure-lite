@@ -1,0 +1,10 @@
+{
+    "name" : "The infamous 'Swamp'",
+    "description" : "A mushy area. The only thing of importance here is the westward path that leads to the Circumfence",
+    "clue" : "A completely useless place, one wonders why the 'creator' put it here...",
+    "neighbors" : {"e" : 1, "w" : 5},
+    "requiredItems" : [
+        "Twoflower"
+    ],
+    "deniedText" : "You can't possibly leave Twoflower alone... A To-u-reist like him would be gutter meat within a couple of minutes."
+}
