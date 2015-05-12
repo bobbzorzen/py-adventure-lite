@@ -1,37 +1,56 @@
+"""
+sdf
+"""
 import json
 from Item import Item
 
-def get_room(id):
+def get_room(room_id):
+    """
+    sdf
+    """
     ret = None
-    filename = "rooms/" + str(id) + ".json"
+    filename = "rooms/" + str(room_id) + ".json"
     with open(filename, "r") as f:
         jsontext = f.read()
         d = json.loads(jsontext)
-        d['id'] = id
-        ret = Room(**d)
+        d['id'] = room_id
+        ret = Room(d)
     return ret
 
 class Room():
-    def __init__(self, id=0, name="A Room", description="An empty room", clue="This rooms seems useless", neighbors={}, items=[], requiredItems=[], deniedText="The path is blocked"):
-        self.id = id
-        self.name = name
-        self.description = description
-        self.clue = clue
-        self.neighbors = neighbors
+    """
+    sdf
+    """
+    def __init__(self, d):
+        """
+        sdf
+        """
+        self.id = d['id']
+        self.name = d['name']
+        self.description = d['description']
+        self.clue = d['clue']
+        self.neighbors = d['neighbors']
         self.items = {}
-        for item in items:
-            itm = Item(**item)
+        d['items'] = d['items'] if 'items' in d else []
+        for item in d['items']:
+            itm = Item(item)
             self.items[itm.name.lower()] = itm
-        self.requiredItems = requiredItems
-        self.deniedText = deniedText
+        self.requiredItems = d['requiredItems'] if 'requiredItems' in d else []
+        self.deniedText = d['deniedText'] if 'deniedText' in d else []
 
-    def _neighbor(self, direction):
+    def neighbor(self, direction):
+        """
+        sdf
+        """
         if direction in self.neighbors:
             return self.neighbors[direction]
         else:
             return None
 
     def tryToEnter(self, inventory):
+        """
+        sdf
+        """
         if set(self.requiredItems).issubset(inventory):
             return True
         else:
@@ -39,12 +58,18 @@ class Room():
             return False
 
     def getItems(self):
+        """
+        sdf
+        """
         retArr = []
         for item in self.items:
             retArr.append(self.items[item].name)
         return retArr
 
     def getItem(self, item):
+        """
+        sdf
+        """
         if item.lower() in (i.lower() for i in self.items):
             return self.items[item.lower()]
         else:
@@ -52,22 +77,40 @@ class Room():
             return False
 
     def pickup(self, item):
+        """
+        sdf
+        """
         if item.lower() in (i.lower() for i in self.items):
             return self.items[item.lower()].pickup()
         else:
             print("No such item in this room.")
 
     def kick(self, item):
+        """
+        sdf
+        """
         if item.lower() in (i.lower() for i in self.items):
             return self.items[item.lower()].kick()
         else:
             print("No such item in this room.")
 
     def north(self):
+        """
+        sdf
+        """
         return self._neighbor('n')
     def south(self):
+        """
+        sdf
+        """
         return self._neighbor('s')
     def east(self):
+        """
+        sdf
+        """
         return self._neighbor('e')
     def west(self):
+        """
+        sdf
+        """
         return self._neighbor('w')
